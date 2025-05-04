@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 input{
-  background-color: #AAAAAA;
+  background-color: white;
   margin: 1px;
   border-radius: 10px;
 }

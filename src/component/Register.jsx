@@ -70,25 +70,25 @@ const Register = () => {
       
       <form onSubmit={AddAccount} className="flex flex-col justify-center items-center">
         <div className='flex flex-col'>
-          <label htmlFor="name">Username:</label>
+          <label className="text-white" htmlFor="name">Username:</label>
           <input id="name" ref={name} type="text" placeholder="🧑🏻‍🦱 Username"/>
           {error.name && <div style={{ color: 'red' }}>{error.name}</div>}
         </div>
         <div className='flex flex-col'>
-          <label htmlFor="email">Email:</label>
+          <label className="text-white" htmlFor="email">Email:</label>
           <input id="email" ref={email} type="email" placeholder="✉️ Email"/>
           {error.email && <div style={{ color: 'red' }}>{error.email}</div>}
         </div>
         <div className='flex flex-col'>
-          <label htmlFor="pass">Password:</label>
+          <label className="text-white" htmlFor="pass">Password:</label>
           <input id="pass" ref={pass} type="password" placeholder="🔑 Password"/>
           {error.pass && <div style={{ color: 'red' }}>{error.pass}</div>}
         </div>
         <div className="flex flex-col">
         {error.accEixst && <div style={{ color: 'red' }}>{error.accEixst}</div>}  
-          <button className="text-sm cursor-pointer hover:text-amber-100" type="submit">Sign Up</button>
+          <button className="text-white text-sm cursor-pointer hover:text-amber-100" type="submit">Sign Up</button>
         </div>
-        <p className="text-sm cursor-pointer hover:text-amber-100" onClick={() => setToLogin(true)}>Already have an account?</p>
+        <p className="text-white text-sm cursor-pointer hover:text-amber-100" onClick={() => setToLogin(true)}>Already have an account?</p>
       </form>
     );
     
