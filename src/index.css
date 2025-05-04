@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+input{
+  background-color: #AAAAAA;
+  margin: 1px;
+  border-radius: 10px;
+}
+
+.input{
+  color: linear-gradient(#2A7B9B,#57C785);
+}
